@@ -19,38 +19,47 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/",
         element: <HomePage />,
         index: true,
       },
       {
-        path: "/booking",
+        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/booking",
         element: <BookingPage />,
       },
 
       {
-        path: "/contact",
+        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/contact",
         element: <ContactPage />,
       },
-      { path: "/login", element: <AdminPageValidation /> },
       {
-        path: "/admin",
+        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/login",
+        element: <AdminPageValidation />,
+      },
+      {
+        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/admin",
         element: <AdminPage />,
       },
       {
-        path: "/menu",
+        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/menu",
         element: <MenuPage />,
       },
       {
-        path: "/about",
+        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/about",
         element: <AboutPage />,
       },
       {
-        path: "booking/form",
+        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/booking/form",
         element: <BookingFormPage />,
       },
-      { path: "/admin/:bookingId", element: <ShowSingleBooking /> },
-      { path: "/admin/new-booking", element: <AdminCreateNewBooking /> },
+      {
+        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/admin/:bookingId",
+        element: <ShowSingleBooking />,
+      },
+      {
+        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/admin/new-booking",
+        element: <AdminCreateNewBooking />,
+      },
     ],
   },
 ]);
