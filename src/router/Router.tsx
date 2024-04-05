@@ -14,50 +14,50 @@ import { AdminCreateNewBooking } from "../components/AdminCreateNewBooking";
 
 export const router = createBrowserRouter([
   {
-    path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/",
+    path: "/",
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/",
+        path: "/",
         element: <HomePage />,
         index: true,
       },
       {
-        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/booking",
+        path: "/booking",
         element: <BookingPage />,
       },
 
       {
-        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/contact",
+        path: "/contact",
         element: <ContactPage />,
       },
       {
-        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/login",
+        path: "/login",
         element: <AdminPageValidation />,
       },
       {
-        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/admin",
+        path: "/admin",
         element: <AdminPage />,
       },
       {
-        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/menu",
+        path: "/menu",
         element: <MenuPage />,
       },
       {
-        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/about",
+        path: "/about",
         element: <AboutPage />,
       },
       {
-        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/booking/form",
+        path: "/booking/form",
         element: <BookingFormPage />,
       },
       {
-        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/admin/:bookingId",
+        path: "/admin/:bookingId",
         element: <ShowSingleBooking />,
       },
       {
-        path: "https://borg98.github.io/the-restaurant-hadetsakultparestaurangen/admin/new-booking",
+        path: "/admin/new-booking",
         element: <AdminCreateNewBooking />,
       },
     ],
