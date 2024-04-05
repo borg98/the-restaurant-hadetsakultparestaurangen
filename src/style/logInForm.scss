@@ -1,0 +1,52 @@
+@use "variablesMartin" as v;
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 48px);
+  background-color: v.$backgorund-color;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid v.$title-color;
+    border-radius: 10px;
+    color: v.$title-color;
+    box-shadow: 0 0 10px 0 v.$tertiary-color;
+
+    &__input {
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid v.$title-color;
+      background-color: v.$backgorund-color;
+      color: v.$title-color;
+      font-size: 16pt;
+
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid v.$tertiary-color;
+      }
+    }
+
+    &__button {
+      background-color: #4caf50;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: white;
+
+      &:hover {
+        background-color: #3b853e;
+      }
+    }
+
+    &__label {
+      font-size: 1.5rem;
+    }
+  }
+}

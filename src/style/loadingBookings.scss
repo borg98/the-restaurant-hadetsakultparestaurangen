@@ -1,0 +1,15 @@
+.loading-bookings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  background-image: url("../../public/theMoon.jpg");
+  background-size: cover;
+  background-position: center;
+  gap: 50px;
+
+  &__title {
+    color: white;
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,118 @@
+
+body {
+    @media (min-width: 769px) {
+     padding: 0;
+     margin: 0;     
+    }
+  }
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 332vh;
+    background-color: #000000;
+    @media (min-width:768px){
+    height: 300vh; 
+    text-align: start;
+    }
+}
+
+.about-wrapper {
+    color:  #766969;
+    background-color:#000000;
+    height: 400vh;
+    margin-top: -1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 41%;
+    @media (min-width:768px){
+    flex-wrap:wrap;
+    background-color: #000000;;
+    max-width: 1000px;
+    width: 1000px;
+    margin-bottom: 2rem;
+    padding: 5%;  
+    margin-top: 0;    
+    }
+}
+
+.about-wrapper h1 {
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 5%;
+    color: #cac6d0;
+    @media (min-width:768px) {
+    font-size: 45px;
+    text-align: center;
+    }
+}
+
+.about-wrapper h2 {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    @media (min-width:768px) {
+
+    }
+}
+
+.about-wrapper p {
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    @media (min-width:768px) {
+
+    }
+}
+
+
+.background-moon {
+    height: 90vh;
+    background-image: url('../assets/full-moon-1869760_1280.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: -10%;
+    width: 100%;   
+    @media (min-width: 768px) {   
+    height: 60%;
+    width: 100%;
+    margin-top: 1rem;   
+    }
+  }
+
+  .astronaut-image {
+    background-image: url('../assets/astronomy-3161858_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 23%;
+    @media (min-width:768px) {
+    width: 100%;
+    height: 60%;
+    }
+  }
+
+  .astronaut-image h1 {
+    background: -webkit-linear-gradient(45deg, #212120, #cac6d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    max-width: 50%;
+    font-size: 35px;
+    margin-left: 0.5rem;
+    @media (min-width:768px) {
+    font-size: 60px;
+    max-width: 500px;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    }
+  }

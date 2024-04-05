@@ -1,0 +1,119 @@
+.video-home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-video {
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+.home-content {
+  color: #cbc5c5;
+  text-align: center;
+  text-transform: uppercase;
+  align-self: flex-start;
+  font-size: 10px;
+  width: 100%;
+  height: calc(100vh - 48px);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.418);
+  }
+  @media (min-width: 768px) {
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.home-content h1 {
+  width: 100%;
+  font-size: 30px;
+  @media (min-width: 768px) {
+    font-size: 50px;
+  }
+}
+.text {
+  padding-top: 50px;
+  width: 100%;
+  font-size: 20px;
+}
+.landing-section {
+  padding: 4%;
+  background-color: #cbc5c5;
+  margin-top: -39%;
+  @media (min-width: 768px) {
+    margin: auto;
+    margin-top: -5.5%;
+  }
+}
+
+.container-lunardelights {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-right: 20px;
+  align-self: flex-start;
+  float: left;
+  width: 100%;
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
+}
+
+.content-lunardelights {
+  display: grid;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 18px;
+  place-items: center;
+  gap: 50px;
+
+  &__text {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    max-width: 600px;
+  }
+
+  .home-lunar-image {
+    grid-column-start: 1;
+    margin-top: 2rem;
+    aspect-ratio: 3/4;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/moon.webp");
+
+    @media screen and (min-width: 1200px) {
+      grid-column-start: 2;
+      height: 800px;
+      width: 110%;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@use "variablesMartin" as v;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    background-color: #000000;
+  }
+}
+
+.nav {
+  padding: 20px;
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: v.$tertiary-color;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+}

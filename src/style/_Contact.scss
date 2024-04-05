@@ -1,0 +1,55 @@
+@use "variablesMartin" as v;
+html, body {
+  height: 100%;
+}
+.contact-main {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) { 
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 25vh;
+}
+}
+
+// .card-container {
+//   background-color: black;
+//   @media (min-width: 768px) {
+//   padding-left:10%;
+//   padding-bottom: 5%;
+//   margin-top: -10%;
+//   } 
+// }
+.card {
+  border: 1px solid hsl(0, 0%, 80%) ;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 100%, 0.873);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 200px;
+  display: inline-block;
+  background-color: v.$secondary-color;
+}
+
+.cardImg {
+  max-width: 60%;
+  max-height: 60%;
+  border-radius: 50%;
+  margin: bottom 10px;
+}
+
+.card .card-title {
+  margin: 0;
+  color:#766969;
+}
+
+.card .card-text {
+  color: #766969;
+}
+
+ul {
+  list-style-type: none;
+}
