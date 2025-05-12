@@ -14,7 +14,7 @@ import { AdminCreateNewBooking } from "../components/AdminCreateNewBooking";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/the-restaurant-hadetsakultparestaurangen/",
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
